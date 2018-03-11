@@ -1,0 +1,51 @@
+<web-app>
+
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>create card</servlet-name>
+        <servlet-class>CreateCardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>create card</servlet-name>
+        <url-pattern>/card/save</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>move card</servlet-name>
+        <servlet-class>MoveCardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>move card</servlet-name>
+        <url-pattern>/card/move</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>kanban board</servlet-name>
+        <servlet-class>KanbanBoardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>kanban board</servlet-name>
+        <url-pattern>/kanban/board</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>home page</servlet-name>
+        <servlet-class>HomePageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>home page</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
